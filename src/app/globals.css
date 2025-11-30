@@ -1,19 +1,17 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #F6F1E7;
+  --foreground: #0a0a0a;
+  --title-color: #B6495A;
+  --text-color: #5A4534;
+  --hover-color: #C76B6B;
+  --active-color: #A03F4A;
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -35,8 +33,18 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+html {
+  color-scheme: dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+span, p {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
