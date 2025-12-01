@@ -2,8 +2,8 @@
 
 import styles from './styles.module.css';
 
+import { Confetti } from '@/components/confetti';
 import { PropsWithChildren, useState } from "react";
-import { Confetti } from '../confetti';
 
 type DrawButtonProps = PropsWithChildren<{
   code: string;
