@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && db:init",
+    "build": "next build && yarn db:init",
     "start": "next start",
     "lint": "eslint",
     "db:init": "tsx src/db/init.ts",
