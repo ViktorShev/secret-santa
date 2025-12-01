@@ -5,13 +5,13 @@ import styles from './styles.module.css';
 import { Confetti } from '@/components/confetti';
 import { PropsWithChildren, useState } from "react";
 
-type DrawButtonProps = PropsWithChildren<{
+type DrawProps = PropsWithChildren<{
   code: string;
   assignedTo?: string | null;
   buttonLabel: string;
 }>
 
-export function Draw({ code, assignedTo, buttonLabel }: DrawButtonProps) {
+export function Draw({ code, assignedTo, buttonLabel }: DrawProps) {
   const [drawnParticipant, setDrawnParticipant] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
 
